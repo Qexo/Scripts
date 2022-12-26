@@ -4,5 +4,11 @@
         "description": "你好，世界！",
         "path": "scripts/hello-world.py",
         "author": "Abudu"
+    },
+    {
+        "name": "清除缓存",
+        "description": "这是一个样例，用于清除全部的缓存",
+        "path": "scripts/clear-caches.py",
+        "author": "Abudu"
     }
 ]
