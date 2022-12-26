@@ -2,6 +2,7 @@
     {
         "name": "Hello World",
         "path": "scripts/hello-world.py",
-        "author": "Abudu"
+        "author": "Abudu",
+        "date": "2022-12-26"
     }
 ]
