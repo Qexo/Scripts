@@ -3,7 +3,6 @@
         "name": "Hello World",
         "description": "你好，世界！",
         "path": "scripts/hello-world.py",
-        "author": "Abudu",
-        "date": "2022-12-26"
+        "author": "Abudu"
     }
 ]
