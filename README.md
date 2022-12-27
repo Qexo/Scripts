@@ -4,7 +4,7 @@ Qexo 云端命令库
 1. 在 scripts 目录下创建文件 xxx.py
 2. 参考示例(hello-world.py)编辑你的命令，可直接使用 hexoweb/functions.py 内置函数
 3. 在 index.json 中添加信息
-```json
+```jsonc
 [
     ...
     {
