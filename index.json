@@ -4,7 +4,9 @@
         "description": "你好，世界！",
         "path": "scripts/hello-world.py",
         "author": "Abudu",
-        "argv": ["name"]
+        "argv": [
+            {"name": "name", "placeholder": "你的名字"}
+        ]
     },
     {
         "name": "清除缓存",

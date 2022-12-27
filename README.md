@@ -12,7 +12,10 @@ Qexo 云端命令库
         "description": "介绍",
         "path": "scripts/xxx.py",
         "author": "Your Name",
-        "argv": ["name", ...]  //需要填写的参数
+        "argv": [
+            {"name":"name", "placeholder": "你的名字"},
+            ...
+        ]
     }
 ]
 ```
