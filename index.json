@@ -3,7 +3,8 @@
         "name": "Hello World",
         "description": "你好，世界！",
         "path": "scripts/hello-world.py",
-        "author": "Abudu"
+        "author": "Abudu",
+        "argv": ["name"]
     },
     {
         "name": "清除缓存",
