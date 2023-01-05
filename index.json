@@ -13,5 +13,11 @@
         "description": "这是一个样例，用于清除全部的缓存",
         "path": "scripts/clear-caches.py",
         "author": "Abudu"
+    },
+    {
+        "name": "批量通过友链",
+        "description": "用于通过全部的友链申请",
+        "path": "scripts/pass-all-flinks.py",
+        "author": "Abudu"
     }
 ]
