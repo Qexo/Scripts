@@ -19,5 +19,25 @@
         "description": "用于通过全部的友链申请",
         "path": "scripts/pass-all-flinks.py",
         "author": "Abudu"
+    },
+    {
+        "name": "创建子账号",
+        "description": "(测试)用于创建子账号",
+        "path": "scripts/create-account.py",
+        "author": "Abudu",
+        "argv": [
+            {"name": "username", "placeholder": "用户名"},
+            {"name": "password", "placeholder": "密码"}
+        ]
+    },
+    {
+        "name": "删除子账号",
+        "description": "(测试)用于删除子账号",
+        "path": "scripts/delete-account.py",
+        "author": "Abudu",
+        "argv": [
+            {"name": "username", "placeholder": "用户名"},
+            {"name": "password", "placeholder": "密码"}
+        ]
     }
 ]
