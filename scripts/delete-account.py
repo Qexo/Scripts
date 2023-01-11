@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate
 
 user = authenticate(username=username, password=password)
 if user is not None:
-    user = User.objects.get(username=username, password=password)
+    user = User.objects.get(username__exact=username)
     if not user.is_staff:
         user.delete()
         print("成功删除用户")
