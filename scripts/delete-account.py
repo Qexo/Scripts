@@ -1,9 +1,7 @@
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 
 user = authenticate(username=username, password=password)
 if user is not None:
-    user = User.objects.get(username__exact=username)
     if not user.is_staff:
         user.delete()
         print("成功删除用户")
