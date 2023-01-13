@@ -1,3 +1,11 @@
+"""
+"name": "批量通过友链",
+"description": "用于通过全部的友链申请",
+"path": "scripts/pass-all-flinks.py",
+"author": "Abudu"
+"""
+
+
 counter = 0
 all_friends = FriendModel.objects.filter(status=False)
 for friend in all_friends:

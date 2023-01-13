@@ -9,21 +9,26 @@
         ]
     },
     {
-        "name": "清除缓存",
-        "description": "这是一个样例，用于清除全部的缓存",
-        "path": "scripts/clear-caches.py",
-        "author": "Abudu"
-    },
-    {
         "name": "批量通过友链",
         "description": "用于通过全部的友链申请",
         "path": "scripts/pass-all-flinks.py",
         "author": "Abudu"
     },
     {
-        "name": "创建子账号",
-        "description": "(测试)用于创建子账号",
+        "name": "创建子用户",
+        "description": "(实验性)用于创建子用户",
         "path": "scripts/create-account.py",
+        "author": "Abudu",
+        "argv": [
+            {"name": "username", "placeholder": "用户名"},
+            {"name": "password", "placeholder": "密码"},
+            {"name": "is_staff", "placeholder": "是否是管理员 填写true/false"}
+        ]
+    },
+    {
+        "name": "删除子用户",
+        "description": "(实验性)用于删除子用户",
+        "path": "scripts/delete-account.py",
         "author": "Abudu",
         "argv": [
             {"name": "username", "placeholder": "用户名"},
@@ -31,13 +36,9 @@
         ]
     },
     {
-        "name": "删除子账号",
-        "description": "(测试)用于删除子账号",
-        "path": "scripts/delete-account.py",
-        "author": "Abudu",
-        "argv": [
-            {"name": "username", "placeholder": "用户名"},
-            {"name": "password", "placeholder": "密码"}
-        ]
+        "name": "查询用户列表",
+        "description": "(实验性)列出所有系统内用户",
+        "path": "scripts/list_accounts.py",
+        "author": "Abudu"
     }
 ]

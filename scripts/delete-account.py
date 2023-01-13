@@ -1,11 +1,24 @@
+"""
+"name": "删除子用户",
+"description": "(实验性)用于删除子用户",
+"path": "scripts/delete-account.py",
+"author": "Abudu",
+"argv": [
+    {"name": "username", "placeholder": "用户名"},
+    {"name": "password", "placeholder": "密码"}
+]
+"""
+
+
 from django.contrib.auth import authenticate
+from django.contrib.auth.models import User
 
 user = authenticate(username=username, password=password)
 if user is not None:
-    if not user.is_staff:
+    if User.objects.filter(is_staff=True).count() > 1 or not user.is_staff:
         user.delete()
         print("成功删除用户")
     else:
-        print("不支持删除管理员用户")
+        print("至少需要一个管理员账户")
 else:
     print("用户不存在")
