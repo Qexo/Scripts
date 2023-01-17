@@ -15,7 +15,8 @@ from django.contrib.auth.models import User
 
 user = authenticate(username=username, password=password)
 if user is not None:
-    if User.objects.filter(is_staff=True).count() > 1 or not user.is_staff:
+    #if User.objects.filter(is_staff=True).count() or not user.is_staff:  #Failes
+    if User.objects.filter(is_staff__in=[True]).count() or not user.is_staff:  # Works 
         user.delete()
         print("成功删除用户")
     else:
