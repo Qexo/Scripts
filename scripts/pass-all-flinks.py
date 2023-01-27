@@ -7,7 +7,7 @@
 
 
 counter = 0
-all_friends = FriendModel.objects.filter(status=False)
+all_friends = FriendModel.objects.filter(status__in=[False])
 for friend in all_friends:
     friend.status = True
     friend.save()
