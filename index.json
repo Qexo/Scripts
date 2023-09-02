@@ -38,7 +38,13 @@
     {
         "name": "查询用户列表",
         "description": "(实验性)列出所有系统内用户",
-        "path": "scripts/list_accounts.py",
+        "path": "scripts/list-accounts.py",
+        "author": "Abudu"
+    },
+    {
+        "name": "批量删除友链",
+        "description": "用于删除全部的友链申请",
+        "path": "scripts/del-all-flinks.py",
         "author": "Abudu"
     }
 ]
