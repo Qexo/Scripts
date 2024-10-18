@@ -46,5 +46,17 @@
         "description": "用于删除全部的友链申请",
         "path": "scripts/del-all-flinks.py",
         "author": "Abudu"
+    },
+    {
+        "name": "批量删除PV统计数据",
+        "description": "用于删除全部的PV统计数据",
+        "path": "scripts/del-all-pv.py",
+        "author": "Abudu"
+    },
+    {
+        "name": "批量删除UV统计数据",
+        "description": "用于删除全部的UV统计数据",
+        "path": "scripts/del-all-uv.py",
+        "author": "Abudu"
     }
 ]
