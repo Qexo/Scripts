@@ -6,9 +6,6 @@
 """
 
 
-counter = 0
-all_ = StatisticPV.objects.all()
-for i in all_:
-    i.delete()
-    counter += 1
+counter = StatisticPV.objects.count()
+StatisticPV.objects.all().delete()
 print("成功删除了{}条PV数据".format(counter))
