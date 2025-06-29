@@ -42,8 +42,8 @@
         "author": "Abudu"
     },
     {
-        "name": "批量删除友链",
-        "description": "用于删除全部的友链申请",
+        "name": "批量清理友链",
+        "description": "用于删除全部未通过的友链申请",
         "path": "scripts/del-all-flinks.py",
         "author": "Abudu"
     },

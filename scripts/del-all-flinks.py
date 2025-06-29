@@ -6,9 +6,5 @@
 """
 
 
-counter = 0
-all_friends = FriendModel.objects.filter(status__in=[False])
-for friend in all_friends:
-    friend.delete()
-    counter += 1
+counter = FriendModel.objects.filter(status__in=[False]).delete()[0]
 print("成功删除了{}条友链".format(counter) if counter else "无未通过的友链")
