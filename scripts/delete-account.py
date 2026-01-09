@@ -13,6 +13,7 @@
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
+user = User.objects.filter(username=username).first()
 if user is not None:
     #if User.objects.filter(is_staff=True).count() or not user.is_staff:  #Failes
     if User.objects.filter(is_staff__in=[True]).count() or not user.is_staff:  # Works 
