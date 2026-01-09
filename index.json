@@ -31,8 +31,7 @@
         "path": "scripts/delete-account.py",
         "author": "Abudu",
         "argv": [
-            {"name": "username", "placeholder": "用户名"},
-            {"name": "password", "placeholder": "密码"}
+            {"name": "username", "placeholder": "用户名"}
         ]
     },
     {
